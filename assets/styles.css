@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Moon Time";
+  src: url("/assets/Moon.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+
+  width: 75%;
+  max-width: 75rem;
+
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  width: 66%;
+}
+
+h1 {
+  font-family: "Moon Time";
+  font-size: 10rem;
+  font-weight: 100;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#paint {
+  position: absolute;
+  right: -2rem;
+  rotate: 5deg;
+
+  width: 25rem;
+
+  z-index: -1;
+}
+
+ul {
+  list-style: "- ";
+
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#note {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 4rem;
+
+  height: 4rem;
+  width: 27rem;
+}
+
+#note > img {
+  height: 100%;
+
+  padding-right: 0.5rem;
+}
+
+#note > p {
+  line-height: 1.8rem;
+}
+
+#note > p > span {
+  background-color: #ffde59;
+  border-radius: 0.35rem;
+
+  padding: 0.25rem;
+}
+
+#threads {
+  width: 1rem;
+
+  position: absolute;
+  bottom: -0.8rem;
+  right: 13.2rem;
+}
+
+aside {
+  width: 34%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 140%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    flex-direction: column-reverse;
+
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  .subtitle {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  #paint {
+    width: 20rem;
+  }
+
+  ul {
+    margin-top: 3rem;
+    font-size: 1.25rem;
+  }
+
+  #note {
+    width: 21rem;
+  }
+
+  #note > #profile {
+    display: none;
+  }
+
+  #note > p > span {
+    padding: 0.25rem 0.5rem;
+  }
+
+  #threads {
+    right: 8.5rem;
+  }
+}
